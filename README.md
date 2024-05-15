@@ -12,9 +12,7 @@ Welcome to Skincare-Routine-AI-Scraper! This project aims to help users find the
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Project Structure](#project-structure)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Installation
 
