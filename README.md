@@ -1,114 +1,40 @@
-# Skincare-Routine-AI-Scraper
+# Gym Tracker
 
-Welcome to Skincare-Routine-AI-Scraper! This project aims to help users find the best skincare products for their specific needs and integrate them into their skincare routines. The tool scrapes product data, analyzes it, and provides comprehensive information to help users make informed decisions.
+Welcome to Gym Tracker! This mobile app is designed to enhance your fitness journey by providing an intuitive platform to track your workouts, analyze progress, and receive personalized exercise recommendations. Whether you're a beginner or a seasoned athlete, Gym Tracker is here to support your fitness goals.
 
 ## Features
 
-- **Product Search**: Find skincare products based on specific criteria.
-- **Comprehensive Information**: Detailed product descriptions including suitability for skin types, compatibility with other products, usage timing, and placement within a skincare routine.
-- **Organize Products**: Save and organize products into personalized skincare routines.
+- **Custom Workout Plans**: Create and follow personalized workout routines tailored to your fitness level and goals.
+- **Progress Analytics**: Track your progress over time with detailed analytics on workouts, performance, and achievements.
+- **Exercise Library**: Access a comprehensive library of exercises with video demos to ensure proper technique and maximize results.
+- **AI-Powered Recommendations**: Get personalized workout suggestions based on your progress and fitness preferences.
 
-## Table of Contents
+## Tech Stack
 
-- [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
+- **Frontend**: React Native for a seamless mobile experience.
+- **Backend**: Node.js with Express for managing API requests and user data.
+- **Database**: MongoDB for storing user profiles, workout plans, and progress data.
+- **AI/ML**: Python with Flask for AI-driven workout recommendations and progress analysis.
+- **Video Storage**: AWS S3 for storing and serving exercise demo videos.
+- **Authentication**: JWT for secure user login and data protection.
+- **Deployment**: Docker for consistent development and production environments.
 
-## Installation
+## Getting Started
 
-### Backend (Python)
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/Gym-Tracker.git
+   cd Gym-Tracker
+   
+2. **Install dependencies:**
+npm install
+cd backend
+pip install -r requirements.txt
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/yourusername/Skincare-Routine-AI-Scraper.git
-    ```
-2. Navigate to the project directory:
-    ```bash
-    cd Skincare-Routine-AI-Scraper
-    ```
-3. Set up a virtual environment:
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows, use `venv\Scripts\activate`
-    ```
-4. Install the necessary dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-### Frontend (React)
-
-1. Navigate to the `frontend` directory:
-    ```bash
-    cd frontend
-    ```
-2. Install the necessary dependencies:
-    ```bash
-    npm install
-    ```
-
-## Usage
-
-### Run the Scraper
-
-1. Navigate to the project directory:
-    ```bash
-    cd Skincare-Routine-AI-Scraper
-    ```
-2. Run the scraper to collect product data:
-    ```bash
-    python src/scraper.py
-    ```
-
-### Start the Backend Server
-
-1. Navigate to the project directory (if not already there):
-    ```bash
-    cd Skincare-Routine-AI-Scraper
-    ```
-2. Start the Flask backend server:
-    ```bash
-    python src/app.py
-    ```
-
-### Start the Frontend Server
-
-1. Navigate to the `frontend` directory:
-    ```bash
-    cd frontend
-    ```
-2. Start the React frontend server:
-    ```bash
-    npm start
-    ```
-3. Open your browser and navigate to `http://localhost:3000`.
-
-### Example Search
-
-1. Enter the product name or criteria in the search bar.
-2. Browse through the list of products and click on a product to view detailed information.
-3. Add products to your routine by clicking the "Add to Routine" button.
-
-
-## Contributing
-
-We welcome contributions! Please follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-    ```bash
-    git checkout -b feature-name
-    ```
-3. Make your changes and commit them:
-    ```bash
-    git commit -m "Description of your changes"
-    ```
-4. Push to the branch:
-    ```bash
-    git push origin feature-name
-    ```
-5. Create a pull request.
-
+3. **Set up environment variables:**
+- Create a .env file in the root directory with the following variables:
+REACT_APP_AWS_S3_BUCKET=your_aws_s3_bucket
+JWT_SECRET=your_jwt_secret
 
 
 
